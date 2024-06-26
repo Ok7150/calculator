@@ -1,0 +1,43 @@
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.key-button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Gradient colors for different types of keys */
+.key-button.number {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+}
+
+.key-button.number:hover {
+  background: linear-gradient(135deg, #b2ebf2, #80deea);
+}
+
+.key-button.operator {
+  background: linear-gradient(135deg, #ffecb3, #ffe082);
+}
+
+.key-button.operator:hover {
+  background: linear-gradient(135deg, #ffe082, #ffd54f);
+}
+
+.key-button.special {
+  background: linear-gradient(135deg, #ffcdd2, #ef9a9a);
+}
+
+.key-button.special:hover {
+  background: linear-gradient(135deg, #ef9a9a, #e57373);
+}
+
+.key-button:active {
+  transform: scale(0.95);
+}
